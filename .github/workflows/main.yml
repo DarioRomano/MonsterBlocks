@@ -43,7 +43,7 @@ jobs:
         allowUpdates: true # Set this to false if you want to prevent updating existing releases
         name: ${{ github.event.release.name }}
         draft: true
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.token }}
         artifacts: './module.json, ./monsterblock.zip'
         tag: ${{ github.event.release.tag_name }}
         body: ${{ github.event.release.body }}
